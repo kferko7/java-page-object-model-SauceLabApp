@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteTNG">
+    <parameter name="browser" value="chrome"/>
+
+    <listeners>
+        <listener class-name="listeners.Listeners" />
+    </listeners>
+
+    <test name="loginTest">
+        <classes>
+            <class name="Login.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="BackTest">
+        <classes>
+            <class name="Backpack.BackpackTests"/>
+        </classes>
+    </test>
+
+
+</suite>
