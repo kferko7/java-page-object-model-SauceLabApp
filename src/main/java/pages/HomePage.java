@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
 public class HomePage {
     private WebDriver driver;
 
@@ -23,6 +21,10 @@ public class HomePage {
         WebElement dropdown = driver.findElement(By.className("product_sort_container"));
         dropdown.click();
         return new DropdownPage(driver);
+    }
+
+    private void clickDropdown(String linkText){
+        driver.findElement(clickDropdown());
     }
 
 }
