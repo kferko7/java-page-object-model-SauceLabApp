@@ -19,6 +19,10 @@ public class HomePage {
         return new BackpackPage(driver);
     }
 
-
+    public DropdownPage clickDropdown(){
+        WebElement dropdown = driver.findElement(By.className("product_sort_container"));
+        dropdown.click();
+        return new DropdownPage(driver);
+    }
 
 }
