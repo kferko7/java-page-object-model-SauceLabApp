@@ -42,4 +42,8 @@ public class OverviewPage {
         return driver.findElement(quantityOrder).isDisplayed();
     }
 
+    public String getQuantityOrder(){
+        return driver.findElement(quantityOrder).getText();
+    }
+
 }

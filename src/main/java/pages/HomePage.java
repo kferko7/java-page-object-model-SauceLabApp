@@ -7,8 +7,14 @@ import org.openqa.selenium.WebElement;
 public class HomePage {
     private WebDriver driver;
 
+    private By cartBadgeButton = By.cssSelector(".shopping_cart_badge");
+
     public HomePage(WebDriver driver){
         this.driver = driver;
+    }
+
+    public void setCartBadgeButton() {
+        driver.findElement(cartBadgeButton).click();
     }
 
     public BackpackPage clickProductBackPack(){
@@ -23,8 +29,12 @@ public class HomePage {
         return new DropdownPage(driver);
     }
 
-    private void clickDropdown(String linkText){
-        driver.findElement(clickDropdown());
+    public TshirtPage clickProductTshirt(){
+        WebElement productTshirt = driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt"));
+        productTshirt.click();
+        return new TshirtPage(driver);
     }
+
+
 
 }

@@ -18,7 +18,6 @@ import utils.WindowManager;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -36,7 +35,7 @@ public class BaseTests {
 
     public OverviewPage overviewPage;
 
-    public CheckoutComplete checkoutComplete;
+    public CheckoutCompletePage checkoutCompletePage;
 
 
     @BeforeClass
@@ -61,9 +60,7 @@ public class BaseTests {
         loginPage.setLoginButton();
         checkOutInfoPage = new CheckOutInfoPage(driver);
         overviewPage = new OverviewPage(driver);
-        checkoutComplete = new CheckoutComplete(driver);
-
-
+        checkoutCompletePage = new CheckoutCompletePage(driver);
 
     }
 
