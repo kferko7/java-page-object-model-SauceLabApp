@@ -11,18 +11,12 @@ public class BackpackPage {
     private WebDriver driver;
     private By addToCartBackPackButton = By.cssSelector("#add-to-cart-sauce-labs-backpack");
 
-    private By shoppingCartBadgeButton = By.className("shopping_cart_badge");
-
     public BackpackPage(WebDriver driver) {
         this.driver = driver;
     }
 
     public void setAddToCartBackPackButton() {
         driver.findElement(addToCartBackPackButton).click();
-    }
-
-    public void setShoppingCartBadgeButton() {
-        driver.findElement(shoppingCartBadgeButton).click();
     }
 
     public BackpackPage clickCheckoutButton() {

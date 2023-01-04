@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class DropdownPage extends By {
+public class DropdownPage {
 
     private WebDriver driver;
 
@@ -35,9 +35,5 @@ public class DropdownPage extends By {
         return new Select(driver.findElement(dropdown));
     }
 
-    @Override
-    public List<WebElement> findElements(SearchContext context) {
-        return null;
-    }
 }
 

@@ -14,7 +14,7 @@ public class BackpackTests  extends BaseTests {
     public void TC_02_testSuccessBackPack() throws InterruptedException {
         var backpackPage = homePage.clickProductBackPack();
         backpackPage.setAddToCartBackPackButton();
-        backpackPage.setShoppingCartBadgeButton();
+        homePage.setCartBadgeButton();
         backpackPage.clickCheckoutButton();
         checkOutInfoPage.setFirstNameField();
         checkOutInfoPage.setLastNameField();
@@ -22,11 +22,12 @@ public class BackpackTests  extends BaseTests {
         checkOutInfoPage.setContinueButton();
         overviewPage.clickQuantityOrder();
         assertTrue(overviewPage.isQuantityOrderDisplayed(),"Quantity Order is not displayed");
+        System.out.println(overviewPage.getQuantityOrder());
         overviewPage.clickFinish();
         assertTrue(overviewPage.isOrderTextDisplayed(),"Order text is not displayed");
         System.out.println(overviewPage.getLoadedText());
         getWindowManager().switchToNewTab();
-        checkoutComplete.setBackHomeButton();
+        checkoutCompletePage.setBackHomeButton();
 
     }
 }
