@@ -14,7 +14,8 @@ public class HomePage {
     }
 
     public void setCartBadgeButton() {
-        driver.findElement(cartBadgeButton).click();
+       //this.cartBadgeButton =  cartBadgeButton;
+       driver.findElement(cartBadgeButton).click();
     }
 
     public BackpackPage clickProductBackPack(){

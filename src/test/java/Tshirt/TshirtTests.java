@@ -1,3 +1,5 @@
+package Tshirt;
+
 import Base.BaseTests;
 import org.testng.annotations.Test;
 

@@ -7,17 +7,31 @@
         <listener class-name="listeners.Listeners" />
     </listeners>
 
-    <test name="loginTest">
+    <test name="Login">
         <classes>
             <class name="Login.LoginTests"/>
         </classes>
     </test>
 
-    <test name="BackTest">
+    <test name="Backpack">
         <classes>
             <class name="Backpack.BackpackTests"/>
         </classes>
     </test>
+
+    <test name="Dropdown">
+        <classes>
+            <class name="Dropdown.DropdownTests"/>
+        </classes>
+    </test>
+
+    <test name="Tshirt">
+        <classes>
+            <class name="Tshirt.TshirtTests"/>
+        </classes>
+    </test>
+
+
 
 
 </suite>
