@@ -32,6 +32,8 @@ public class BaseTests {
     protected HomePage homePage;
     protected LoginPage loginPage;
 
+    public CartPage cartPage;
+
     public BackpackPage backpackPage;
     public CheckOutInfoPage checkOutInfoPage;
 
@@ -60,7 +62,8 @@ public class BaseTests {
         loginPage.setUsername(username);
         loginPage.setPassword(password);
         loginPage.setLoginButton();
-        backpackPage =new BackpackPage(driver);
+        cartPage = new CartPage(driver);
+        backpackPage = new BackpackPage(driver);
         checkOutInfoPage = new CheckOutInfoPage(driver);
         overviewPage = new OverviewPage(driver);
         checkoutCompletePage = new CheckoutCompletePage(driver);

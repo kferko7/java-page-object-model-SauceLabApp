@@ -36,6 +36,4 @@ public class HomePage {
         return new TshirtPage(driver);
     }
 
-
-
 }

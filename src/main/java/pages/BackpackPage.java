@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BackpackPage {
 
     private WebDriver driver;
-    private By addToCartBackPackButton = By.cssSelector("#add-to-cart-sauce-labs-backpack");
+
+    private By addToCartBackPackButton = By.id("add-to-cart-sauce-labs-backpack");
 
     public BackpackPage(WebDriver driver) {
         this.driver = driver;

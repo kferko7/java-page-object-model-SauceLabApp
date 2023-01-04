@@ -9,8 +9,6 @@ public class TshirtPage {
 
     private WebDriver driver;
 
-    //private By button = By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']");
-
     private By tshirtPrice = By.cssSelector(".inventory_item_price");
 
     public TshirtPage(WebDriver driver) {

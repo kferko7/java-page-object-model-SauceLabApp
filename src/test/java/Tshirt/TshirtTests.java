@@ -16,7 +16,7 @@ public class TshirtTests extends BaseTests {
         assertTrue(tshirtPage.isTshirtNameDisplayed(),"Order text is not displayed");
         System.out.println(tshirtPage.getTshirtName());
         getWindowManager().switchToNewTab();
-        backpackPage.clickCheckoutButton();
+        cartPage.setCheckoutButton();
         checkOutInfoPage.setFirstNameField();
         checkOutInfoPage.setLastNameField();
         checkOutInfoPage.setPostalCodeField();
@@ -24,6 +24,8 @@ public class TshirtTests extends BaseTests {
         overviewPage.clickQuantityOrder();
         overviewPage.clickFinish();
         getWindowManager().switchToNewTab();
+        assertTrue(overviewPage.isOrderTextDisplayed(),"Order text is not displayed");
+        System.out.println(overviewPage.getLoadedText());
         checkoutCompletePage.setBackHomeButton();
 
 
