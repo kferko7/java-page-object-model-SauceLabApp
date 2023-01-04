@@ -22,11 +22,7 @@ public class TshirtTests extends BaseTests {
         checkOutInfoPage.setPostalCodeField();
         checkOutInfoPage.setContinueButton();
         overviewPage.clickQuantityOrder();
-        /*assertTrue(overviewPage.isQuantityOrderDisplayed(),"Quantity Order is not displayed");
-        System.out.println(overviewPage.getQuantityOrder());*/
         overviewPage.clickFinish();
-        /*assertTrue(overviewPage.isOrderTextDisplayed(),"Order text is not displayed");
-        System.out.println(overviewPage.getLoadedText());*/
         getWindowManager().switchToNewTab();
         checkoutCompletePage.setBackHomeButton();
 
