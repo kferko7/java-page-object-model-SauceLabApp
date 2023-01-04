@@ -31,6 +31,8 @@ public class BaseTests {
     private EventFiringWebDriver driver;
     protected HomePage homePage;
     protected LoginPage loginPage;
+
+    public BackpackPage backpackPage;
     public CheckOutInfoPage checkOutInfoPage;
 
     public OverviewPage overviewPage;
@@ -58,6 +60,7 @@ public class BaseTests {
         loginPage.setUsername(username);
         loginPage.setPassword(password);
         loginPage.setLoginButton();
+        backpackPage =new BackpackPage(driver);
         checkOutInfoPage = new CheckOutInfoPage(driver);
         overviewPage = new OverviewPage(driver);
         checkoutCompletePage = new CheckoutCompletePage(driver);
