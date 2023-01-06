@@ -18,9 +18,7 @@ public class TshirtPage {
 
     public void setTshirtPrice() {
         driver.findElement(tshirtPrice).click();
-        /*WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.presenceOfElementLocated(tshirtName));*/
-    }
+      }
     public boolean isTshirtNameDisplayed(){
         return driver.findElement(tshirtPrice).isDisplayed();
     }
